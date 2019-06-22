@@ -131,19 +131,11 @@
   }
 
   .site-nav__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
     font-family: $Robo-regular;
     font-size: 10px;
     font-weight: 700;
     line-height: 20px;
-    letter-spacing: 0.6px;
     color: #707070;
     text-transform: uppercase;
-
-    /* Text style for "Проекты" */
-    // color: #000000;
   }
 }
