@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name = "Description" content = "Сайт строительно-монтажной компании" >
   <title>Стартовый шаблон</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/circe-regular.woff2" as="font" crossorigin="anonymous">
@@ -32,29 +33,34 @@
   <div style="display:none">
     <include src="build/img/sprite.svg"></include>
   </div>
-  <svg class="site-list__cart-svg" width="35" height="21">
-    <use xlink:href="#icon-vk"></use>
-  </svg>
 
   <header class="page-header">
 
-    <picture class="page-header__logo">
+    <picture>
+      <source type="image/webp" media="(min-width: 1200px)" srcset="img/site-logo--1200.webp">
+      <source type="image/webp" srcset="img/site-logo--320.webp">
+
       <source media="(min-width: 1200px)" srcset="img/site-logo--1200.png">
-      <img src="img/site-logo--320.png" alt="site-logo" width="86" height="37">
+      <img class="page-header__logo page-header__logo--position" src="img/site-logo--320.png" alt="site-logo" width="86" height="37">
     </picture>
-    <nav class="site-nav">
-      <div class="site-nav__toggle page-header__toggle">
+
+    <nav class="site-nav site-nav--position">
+      <div class="site-nav__toggle site-nav__toggle--position site-nav__toggle--nojs" tabindex="0">
         <span class="site-nav__toggle-line"></span>
         <span class="site-nav__toggle-line"></span>
         <span class="site-nav__toggle-line"></span>
       </div>
-      <ul class="site-nav__list page-header--closed">
-        <li class="site-nav__item">услуги</li>
-        <li class="site-nav__item">проекты</li>
-        <li class="site-nav__item">партнеры</li>
-        <li class="site-nav__item">контакты</li>
+      <ul class="site-nav__list site-nav__list--active">
+        <li class="site-nav__item"><a class="site-nav__link" href="#">главная</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="#">услуги</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="#">проекты</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="#">партнеры</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="#">контакты</a></li>
       </ul>
     </nav>
+
+    <span class="page-header__phone page-header__phone--position">+7 (495) 452-67-23</span>
+    <button class="page-header__btn page-header__btn--position">Обратная связь</button>
 
   </header>
 
@@ -71,6 +77,8 @@
   </main>
 
   <footer></footer>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
