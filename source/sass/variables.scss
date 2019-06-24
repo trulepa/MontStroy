@@ -1,16 +1,14 @@
 // viewports
 $mobile: 767px;
-$tablet: 768px;
+$tablet-down: 768px;
+$tablet-top: 1199px;
 $desktop: 1200px;
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
 // fonts
-$Rel-bold: "Releway Bold", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
-$Rel-black: "Releway Black", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
-$Robo-regular: "Roboto Regular", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
-$Robo-bold: "Roboto Bold", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
-$Robo-black: "Roboto Black", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
-$Circe: "Circe Regular", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
+$Raleway: "Raleway", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
+$Roboto: "Roboto", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
+$Circe: "Circe", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
 // colors
 $white: #ffffff;
 $black: #000000;

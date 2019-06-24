@@ -10,16 +10,18 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/circe-regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/circe-regular.woff" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/raleway-v13-latin-700.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/raleway-v13-latin-700.woff" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/raleway-v13-latin-900.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/raleway-v13-latin-900.woff" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/roboto-v19-latin-regular.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/roboto-v19-latin-regular.woff" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/roboto-v19-latin-700.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/roboto-v19-latin-700.woff" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/roboto-v19-latin-900.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/roboto-v19-latin-900.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-400-normal.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-400-normal.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-500-normal.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-500-normal.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-700-normal.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-700-normal.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-900-normal.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-900-normal.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/raleway-700-normal.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/raleway-700-normal.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/raleway-900-normal.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/raleway-900-normal.woff" as="font" crossorigin="anonymous">
   <script>
     // Picture element HTML5 shiv
     document.createElement("picture");
@@ -41,17 +43,14 @@
       <source type="image/webp" srcset="img/site-logo--320.webp">
 
       <source media="(min-width: 1200px)" srcset="img/site-logo--1200.png">
-      <img class="page-header__logo page-header__logo--position" src="img/site-logo--320.png" alt="site-logo" width="86"
-        height="37">
+      <img class="page-header__logo" src="img/site-logo--320.png" alt="site-logo" width="86" height="37">
     </picture>
 
-    <nav class="site-nav site-nav--position">
-      <div class="site-nav__toggle site-nav__toggle--position site-nav__toggle--nojs" tabindex="0"
-        aria-label="drop-down menu" title="Выпадающее меню">
+    <nav class="site-nav">
+      <button class="site-nav__toggle site-nav__toggle--nojs" type="button" aria-label="drop-down menu"
+        title="Выпадающее меню">
         <span class="site-nav__toggle-line"></span>
-        <span class="site-nav__toggle-line"></span>
-        <span class="site-nav__toggle-line"></span>
-      </div>
+      </button>
       <ul class="site-nav__list site-nav__list--active">
         <li class="site-nav__item"><a class="site-nav__link" href="#">главная</a></li>
         <li class="site-nav__item"><a class="site-nav__link" href="#">услуги</a></li>
@@ -61,14 +60,14 @@
       </ul>
     </nav>
 
-    <span class="page-header__phone page-header__phone--position">+7 (495) 452-67-23</span>
-    <button class="page-header__btn page-header__btn--position" type="button">Обратная связь</button>
+    <a class="page-header__phone" href="tel:+74954526723">+7 (495) 452-67-23</a>
+    <a class="page-header__anchor" href="#">Обратная связь</a>
 
   </header>
 
   <main>
 
-    <header class="main-header"></header>
+    <section class="main-screen"></section>
     <div class="advantages"></div>
     <div class="services"></div>
     <div class="projects"></div>
