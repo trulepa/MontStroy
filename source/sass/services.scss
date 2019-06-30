@@ -1,12 +1,25 @@
 .services {
+  background-color: $white;
+}
+
+.services__wrapper {
   @include container;
 
-  padding: 153px 16px 0;
+  padding: 99px 16px 0;
+
+  @media (max-width: $tablet) {
+    padding: 34px 22px 0;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 0;
+  }
 }
 
 
 .services__title {
   position: relative;
+  margin: 0 0 17px 0;
   color: $black;
   font-family: $Raleway;
   font-size: 30px;
@@ -28,10 +41,17 @@
   }
 
   @media (max-width: $tablet) {
-
+    margin: 0 0 14px 0;
+    font-size: 26px;
+    letter-spacing: 1.04px;
 
     &::after {
       display: none;
     }
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 20px;
+    letter-spacing: 0.8px;
   }
 }

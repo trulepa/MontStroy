@@ -15,16 +15,16 @@ function accordion(event) {
     var $item = document.getElementsByClassName('services-list__item');
     for (var i = 0; i < $item.length; i++) {
 
-      if ($item[i].classList.contains("show")) {
-        $item[i].classList.toggle("show");
+      if ($item[i].classList.contains("services-list__item--show")) {
+        $item[i].classList.toggle("services-list__item--show");
 
         if ($item[i] != this) {
-          this.classList.toggle("show");
+          this.classList.toggle("services-list__item--show");
         }
         return;
       }
     }
-    this.classList.toggle("show");
+    this.classList.toggle("services-list__item--show");
 
   }
 }
