@@ -1,0 +1,37 @@
+.services {
+  @include container;
+
+  padding: 153px 16px 0;
+}
+
+
+.services__title {
+  position: relative;
+  color: $black;
+  font-family: $Raleway;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 300px;
+    display: block;
+    width: 871px;
+    height: 2px;
+    border: 1px solid #000000;
+    background-color: #f5f8fa;
+  }
+
+  @media (max-width: $tablet) {
+
+
+    &::after {
+      display: none;
+    }
+  }
+}
