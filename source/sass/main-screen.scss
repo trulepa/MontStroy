@@ -1,31 +1,7 @@
 .main-screen {
-  position: relative;
-  max-width: 1920px;
-  margin: 0 auto;
-  background: url("../img/main-header-bg--1200.jpg"), #141414;
-  background-repeat: no-repeat;
-  background-position: center -100px;
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    display: block;
-    height: 469px;
-    width: 100%;
-    background: url("../img/blackout--1200.png") no-repeat bottom center;
-  }
-
-  @media (max-width: $tablet) {
-    background: none;
-
-    &::after {
-      display: none;
-    }
-  }
-
   @media (max-width: $mobile) {
-    background: url("../img/main-header-bg--320.jpg"), #141414;
+    background: url("../img/main-header-bg--320.jpg"); //#141414;
+    // Как сделать подложку незнаю. Залезает на main-screen__description.
     background-repeat: no-repeat;
     background-position: center -3px;
   }
@@ -35,23 +11,22 @@
   }
 }
 
+
 .main-screen__wrapper {
   @include container;
-
-  min-height: 936px;
+  position: relative;
+  min-height: 722px;
   padding: 140px 0 0 15px;
 
   @media (max-width: $tablet) {
     position: relative;
     min-height: 600px;
     padding: 119px 64px 0 84px;
-
-
     background: url("../img/main-header-bg--768.jpg"), #141414;
     background-repeat: no-repeat;
     background-position: center top;
 
-    &::after {
+    &::before {
       content: "";
       z-index: 1;
       position: absolute;
@@ -60,7 +35,8 @@
       display: block;
       height: 394px;
       width: 100%;
-      background: url("../img/blackout--768.png") no-repeat bottom center;
+      background: linear-gradient(to top, #141414, transparent);
+      opacity: 0.8;
     }
   }
 
@@ -71,7 +47,7 @@
     padding: 124px 20px 0;
     background: none;
 
-    &::after {
+    &::before {
       display: none;
     }
   }
@@ -100,9 +76,9 @@
 }
 
 .main-screen__description {
-  order: 4;
+  max-width: 1018px;
   margin: 0;
-  padding: 20px 157px 53px 0;
+  padding: 20px 0 53px 0;
   color: #fffffe;
   font-size: 24px;
   font-weight: 500;
@@ -120,10 +96,9 @@
   }
 
   @media (max-width: $mobile) {
-    position: absolute;
-    bottom: -179px;
+    order: 4;
     color: $black;
-    padding: 0 20px 0 4px;
+    padding: 88px 0 0 4px;
     font-size: 12px;
     line-height: 18px;
 
@@ -152,11 +127,11 @@
 }
 
 .main-screen__links-wrapper {
-  order: 3;
   display: flex;
   align-items: flex-start;
 
   @media (max-width: $mobile) {
+    order: 3;
     flex-direction: column;
   }
 }

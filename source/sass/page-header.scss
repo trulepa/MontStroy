@@ -1,5 +1,5 @@
 .page-header {
-  background-color: $white;
+  background-color: #fbfbfb;
 }
 
 .page-header__wrapper {
@@ -7,9 +7,7 @@
 
   display: flex;
   align-items: center;
-  height: 100px;
-  padding: 0 15px;
-  background-color: #fbfbfb;
+  padding: 18px 15px;
 
   @media (max-width: $tablet) {
     position: relative;

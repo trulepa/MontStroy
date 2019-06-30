@@ -1,0 +1,28 @@
+.cover {
+  width: 100%;
+  max-width: 1920px; // Размер блока ограничил - размером фоновой картинки, чтобы подложки не было видно на больших экранах.
+  position: relative;
+  margin: 0 auto;
+  background: url("../img/main-header-bg--1200.jpg"), #141414;
+  background-repeat: no-repeat;
+  background-position: center -100px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    height: 469px;
+    width: 100%;
+    background: linear-gradient(to top, #141414, transparent);
+    opacity: 0.8;
+  }
+
+  @media (max-width: $tablet) {
+    background: none;
+
+    &::before {
+      display: none;
+    }
+  }
+}
