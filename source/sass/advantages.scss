@@ -2,15 +2,22 @@
   @media (max-width: $tablet) {
     background-color: #fefdff;
   }
+
+  @media (max-width: $mobile) {
+    background-color: $white;
+  }
 }
 
 .advantages__wrapper {
   @include container;
 
   min-height: 213px;
-  //padding: 0 0 0 15px;
 
   @media (max-width: $tablet) {
+    padding: 68px 26px 0;
+  }
+
+  @media (max-width: $mobile) {
     padding: 39px 26px 0;
   }
 }
@@ -22,7 +29,7 @@
   padding: 0;
 
   @media (max-width: $tablet) {
-    align-items: center;
+    align-items: stretch;
   }
 
   @media (max-width: $mobile) {
@@ -39,7 +46,7 @@
   @media (max-width: $tablet) {
     align-items: center;
     min-width: 230px;
-    min-height: 163px;
+    background-color: $white;
     box-shadow: 0 10px 18px 2px rgba(0, 0, 0, 0.05);
   }
 
@@ -60,10 +67,10 @@
 
 .advantages__item--active {
   @media (max-width: $tablet) {
+    z-index: 1;
     left: 0;
     min-width: 280px;
-    min-height: 200px;
-    margin: 0 -12px;
+    margin: -19px -12px;
   }
 
   // Чтобы перебить специфичность стилей заданных ниже
@@ -85,7 +92,7 @@
   // Чтобы перебить специфичность стилей заданных ниже
   .advantages__text {
     @media (max-width: $tablet) {
-
+      padding-bottom: 42px;
       opacity: 1;
       font-size: 14px;
     }
@@ -96,6 +103,7 @@
     flex-direction: column;
     text-align: center;
     width: 234px;
+    margin: 0;
     box-shadow: none;
     border: 1px solid #dddddd;
   }
@@ -135,6 +143,7 @@
 
   @media (max-width: $tablet) {
     max-width: 196px;
+    padding-bottom: 30px;
     color: $black;
     font-size: 12px;
   }
