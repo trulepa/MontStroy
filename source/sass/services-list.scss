@@ -120,6 +120,7 @@
   background-color: $white;
   text-align: left;
   outline: none;
+  cursor: pointer;
 
   @media (max-width: $tablet) {
     width: 351px;
