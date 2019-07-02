@@ -18,10 +18,10 @@
   <link rel="preload" href="fonts/RobotoBold.woff" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/RobotoBlack.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/RobotoBlack.woff" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/raleway-700-normal.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/raleway-700-normal.woff" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/raleway-900-normal.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/raleway-900-normal.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RalewayBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RalewayBold.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RalewayBlack.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RalewayBlack.woff" as="font" crossorigin="anonymous">
   <script>
     // Picture element HTML5 shiv
     document.createElement("picture");
@@ -127,9 +127,9 @@
             </li>
           </ul>
           <div class="advantages__paginaton">
-            <button class="advantages__paginaton-item"></button>
-            <button class="advantages__paginaton-item advantages__paginaton-item--active"></button>
-            <button class="advantages__paginaton-item"></button>
+            <button class="advantages__paginaton-item" type="button"></button>
+            <button class="advantages__paginaton-item advantages__paginaton-item--active" type="button"></button>
+            <button class="advantages__paginaton-item" type="button"></button>
           </div>
 
         </div>
@@ -144,149 +144,265 @@
 
         <ul class="services-list">
 
-          <li class="services-list__item services-list__item--show">
-            <h3 class="services-list__title">Проектирование</h3>
-            <a class="services-list__link" href="#">
-              Предварительная разработка концепции;
-            </a>
-            <a class="services-list__link" href="#">
-              Установка систем энергоснабжения;
-            </a>
-            <a class="services-list__link" href="#">
-              Оформление задания на проектирование;
-            </a>
-            <a class="services-list__link" href="#">
-              Разработка всей рабочей и проектной документации;
-            </a>
-            <a class="services-list__link" href="#">
-              Окончательное согласование проекта энергоснабжения в органах гос.надзора;
-            </a>
-            <a class="services-list__link" href="#">
-              Обеспечение авторского надзора на протяжении всего строительства (контроль за соблюдением всех норм
-              и проектных разработок).
-            </a>
+          <li class="services-list__item">
+
+            <h3 class="services-list__title"><button class="services-list__btn" type="button">Проектирование</button>
+            </h3>
+
+            <ul class="services-links">
+              <li class="services-links__item">
+                <a class="services-links__link" href="#">
+                  Предварительная разработка концепции;
+                </a>
+              </li>
+              <li class="services-links__item">
+                <a class="services-links__link" href="#">
+                  Установка систем энергоснабжения;
+                </a>
+              </li>
+              <li class="services-links__item">
+                <a class="services-links__link" href="#">
+                  Оформление задания на проектирование;
+                </a>
+              </li>
+              <li class="services-links__item">
+                <a class="services-links__link" href="#">
+                  Разработка всей рабочей и проектной документации;
+                </a>
+              </li>
+              <li class="services-links__item">
+                <a class="services-links__link" href="#">
+                  Окончательное согласование проекта энергоснабжения в органах гос.надзора;
+                </a>
+              </li>
+              <li class="services-links__item">
+                <a class="services-links__link" href="#">
+                  Обеспечение авторского надзора на протяжении всего строительства (контроль за соблюдением всех норм
+                  и проектных разработок).
+                </a>
+              </li>
+            </ul>
+
           </li>
 
           <li class="services-list__item">
-            <h3 class="services-list__title">инженерные изыскания</h3>
-            <a class="services-list__link" href="#">
-              Инженерно-геодезические изыскания;
-            </a>
-            <a class="services-list__link" href="#">
-              Инженерно-геофизические изыскания;
-            </a>
-            <a class="services-list__link" href="#">
-              Инженерно-топографические изыскания;
-            </a>
-            <a class="services-list__link" href="#">
-              Инженерно-геологические изыскания;
-            </a>
-            <a class="services-list__link" href="#">
-              Изыскания грунтовых строительных материалов (проведение опытных полевых работ и обследование земляных
-              сооружений);
-            </a>
-            <a class="services-list__link" href="#">
-              Инженерно-экологические (полевые работы, а также лабораторные и камеральные работы);
-            </a>
-            <a class="services-list__link" href="#">
-              Археологические;
-            </a>
-            <a class="services-list__link" href="#">
-              Кадастровые и землеустроительные.
-            </a>
+
+            <h3 class="services-list__title"><button class="services-list__btn" type="button">инженерные
+                изыскания</button></h3>
+
+            <ul class="services-links">
+              <li class="services-links__item">
+                <a class="services-links__link" href="#">
+                  Инженерно-геодезические изыскания;
+                </a>
+              </li>
+              <li class="services-links__item">
+                <a class="services-links__link" href="#">
+                  Инженерно-геофизические изыскания;
+                </a>
+              </li>
+              <li class="services-links__item">
+                <a class="services-links__link" href="#">
+                  Инженерно-топографические изыскания;
+                </a>
+              </li>
+              <li class="services-links__item">
+                <a class="services-links__link" href="#">
+                  Инженерно-геологические изыскания;
+                </a>
+              </li>
+              <li class="services-links__item">
+                <a class="services-links__link" href="#">
+                  Изыскания грунтовых строительных материалов (проведение опытных полевых работ и обследование земляных
+                  сооружений);
+                </a>
+              </li>
+              <li class="services-links__item">
+                <a class="services-links__link" href="#">
+                  Инженерно-экологические (полевые работы, а также лабораторные и камеральные работы);
+                </a>
+              </li>
+              <li class="services-links__item">
+                <a class="services-links__link" href="#">
+                  Археологические;
+                </a>
+              </li>
+              <li class="services-links__item">
+                <a class="services-links__link" href="#">
+                  Кадастровые и землеустроительные.
+                </a>
+              </li>
+            </ul>
+
           </li>
 
           <li class="services-list__item">
-            <h3 class="services-list__title">Строительно-монтажные работы</h3>
-            <a class="services-list__link" href="#">
-              Строительство и реконструкция подстанций до 500 кВ и распределительных устройств станций до 500 кВ;
-            </a>
-            <a class="services-list__link" href="#">
-              Строительство распределительных пунктов;
-            </a>
-            <a class="services-list__link" href="#">
-              Внедрение систем автоматизации управления оборудованием подстанций до 500 кВ;
-            </a>
-            <a class="services-list__link" href="#">
-              Вынос действующих кабелей из строительной зоны;
-            </a>
-            <a class="services-list__link" href="#">
-              Обеспечение временного электроснабжения;
-            </a>
-            <a class="services-list__link" href="#">
-              Монтаж электрооборудования.
-            </a>
+
+            <h3 class="services-list__title"><button class="services-list__btn" type="button">Строительно-монтажные
+                работы</button></h3>
+
+            <ul class="services-links">
+              <li class="services-links__item">
+                <a class="services-links__link" href="#">
+                  Строительство и реконструкция подстанций до 500 кВ и распределительных устройств станций до 500 кВ;
+                </a>
+              </li>
+              <li class="services-links__item">
+                <a class="services-links__link" href="#">
+                  Строительство распределительных пунктов;
+                </a>
+              </li>
+              <li class="services-links__item">
+                <a class="services-links__link" href="#">
+                  Внедрение систем автоматизации управления оборудованием подстанций до 500 кВ;
+                </a>
+              </li>
+              <li class="services-links__item">
+                <a class="services-links__link" href="#">
+                  Вынос действующих кабелей из строительной зоны;
+                </a>
+              <li class="services-links__item">
+                <a class="services-links__link" href="#">
+                  Обеспечение временного электроснабжения;
+                </a>
+              </li>
+              <li class="services-links__item">
+                <a class="services-links__link" href="#">
+                  Монтаж электрооборудования.
+                </a>
+              </li>
+            </ul>
+
           </li>
 
           <li class="services-list__item">
-            <h3 class="services-list__title">эксплуатация и сервисное обслуживание</h3>
-            <a class="services-list__link" href="#">
-              Эксплуатация электрики зданий и энергоустановок, снабжающих энергией эксплуатируемые сооружения;
-            </a>
-            <a class="services-list__link" href="#">
-              Эксплуатация систем отопления объектов с проведением плановых сезонных мероприятий
-            </a>
-            <a class="services-list__link" href="#">
-              Эксплуатация систем ХВС и ГВС эксплуатируемого здания;
-            </a>
-            <a class="services-list__link" href="#">
-              Сервисное обслуживание и эксплуатация систем водоснабжения, водоподготовки и фильтрации в обслуживаемом
-              здании;
-            </a>
-            <a class="services-list__link" href="#">
-              Обслуживание системы дренажа, канализации и ливнестоков: прочистка, промывка, вывоз отходов за территорию;
-            </a>
-            <a class="services-list__link" href="#">
-              Сезонная перенастройка автоматических элементов систем эксплуатации здания и другое.
-            </a>
+
+            <h3 class="services-list__title"><button class="services-list__btn" type="button">эксплуатация и сервисное
+                обслуживание</button></h3>
+
+            <ul class="services-links">
+              <li class="services-links__item">
+                <a class="services-links__link" href="#">
+                  Эксплуатация электрики зданий и энергоустановок, снабжающих энергией эксплуатируемые сооружения;
+                </a>
+              </li>
+              <li class="services-links__item">
+                <a class="services-links__link" href="#">
+                  Эксплуатация систем отопления объектов с проведением плановых сезонных мероприятий
+                </a>
+              </li>
+              <li class="services-links__item">
+                <a class="services-links__link" href="#">
+                  Эксплуатация систем ХВС и ГВС эксплуатируемого здания;
+                </a>
+              </li>
+              <li class="services-links__item">
+                <a class="services-links__link" href="#">
+                  Сервисное обслуживание и эксплуатация систем водоснабжения, водоподготовки и фильтрации в
+                  обслуживаемом
+                  здании;
+                </a>
+              </li>
+              <li class="services-links__item">
+                <a class="services-links__link" href="#">
+                  Обслуживание системы дренажа, канализации и ливнестоков: прочистка, промывка, вывоз отходов за
+                  территорию;
+                </a>
+              </li>
+              <li class="services-links__item">
+                <a class="services-links__link" href="#">
+                  Сезонная перенастройка автоматических элементов систем эксплуатации здания и другое.
+                </a>
+              </li>
+            </ul>
+
           </li>
 
           <li class="services-list__item">
-            <h3 class="services-list__title">Электролаборатория</h3>
-            <a class="services-list__link" href="#">
-              Проверка состояния различных элементов устройств заземления;
-            </a>
-            <a class="services-list__link" href="#">
-              Проверка наличия цепи, проведение замеров сопротивлений (переходных) между заземляющими проводниками и
-              заземлителями, проверку металлосвязи;
-            </a>
-            <a class="services-list__link" href="#">
-              Проверка систем молниезащиты;
-            </a>
-            <a class="services-list__link" href="#">
-              Измерение сопротивления изоляции электрических кабелей, аппаратов, электропроводок и электрооборудования;
-            </a>
-            <a class="services-list__link" href="#">
-              Измерение сопротивления заземления и заземляющих устройств;
-            </a>
-            <a class="services-list__link" href="#">
-              Поиск кабельных трасс, мест повреждения и «прожиг кабеля»;
-            </a>
-            <a class="services-list__link" href="#">
-              Проведение всех необходимых испытаний и измерений для кабельных линий, включая кабель с изоляцией из
-              сшитого полиэтилена до 220 кВ.
-            </a>
+
+            <h3 class="services-list__title"><button class="services-list__btn"
+                type="button">Электролаборатория</button></h3>
+
+            <ul class="services-links">
+              <li class="services-links__item">
+                <a class="services-links__link" href="#">
+                  Проверка состояния различных элементов устройств заземления;
+                </a>
+              </li>
+              <li class="services-links__item">
+                <a class="services-links__link" href="#">
+                  Проверка наличия цепи, проведение замеров сопротивлений (переходных) между заземляющими проводниками и
+                  заземлителями, проверку металлосвязи;
+                </a>
+              </li>
+              <li class="services-links__item">
+                <a class="services-links__link" href="#">
+                  Проверка систем молниезащиты;
+                </a>
+              </li>
+              <li class="services-links__item">
+                <a class="services-links__link" href="#">
+                  Измерение сопротивления изоляции электрических кабелей, аппаратов, электропроводок и
+                  электрооборудования;
+                </a>
+              </li>
+              <li class="services-links__item">
+                <a class="services-links__link" href="#">
+                  Измерение сопротивления заземления и заземляющих устройств;
+                </a>
+              </li>
+              <li class="services-links__item">
+                <a class="services-links__link" href="#">
+                  Поиск кабельных трасс, мест повреждения и «прожиг кабеля»;
+                </a>
+              </li>
+              <li class="services-links__item">
+                <a class="services-links__link" href="#">
+                  Проведение всех необходимых испытаний и измерений для кабельных линий, включая кабель с изоляцией из
+                  сшитого полиэтилена до 220 кВ.
+                </a>
+              </li>
+            </ul>
+
           </li>
 
           <li class="services-list__item">
-            <h3 class="services-list__title">Услуги по технологическому присоединению</h3>
-            <a class="services-list__link" href="#">
-              Оказание технико-экономического консалтинга в составлении договора на технологическое присоединение
-              мощности потребителя к сетям электросетевых компаний;
-            </a>
-            <a class="services-list__link" href="#">
-              Обследование присоединяемых устройств ответственным лицом по государственному надзору при участии сетевого
-              оператора и собственника устройства;
-            </a>
-            <a class="services-list__link" href="#">
-              Фактическое присоединение объектов заявителя к сетям оператора;
-            </a>
-            <a class="services-list__link" href="#">
-              Составление и согласование необходимой технической документации для ввода в эксплуатацию объекта;
-            </a>
-            <a class="services-list__link" href="#">
-              Ввод присоединенного объекта в эксплуатацию.
-            </a>
+
+            <h3 class="services-list__title"><button class="services-list__btn" type="button">Услуги по технологическому
+                присоединению</button>
+            </h3>
+
+            <ul class="services-links">
+              <li class="services-links__item">
+                <a class="services-links__link" href="#">
+                  Оказание технико-экономического консалтинга в составлении договора на технологическое присоединение
+                  мощности потребителя к сетям электросетевых компаний;
+                </a>
+              </li>
+              <li class="services-links__item">
+                <a class="services-links__link" href="#">
+                  Обследование присоединяемых устройств ответственным лицом по государственному надзору при участии
+                  сетевого
+                  оператора и собственника устройства;
+                </a>
+              </li>
+              <li class="services-links__item">
+                <a class="services-links__link" href="#">
+                  Фактическое присоединение объектов заявителя к сетям оператора;
+                </a>
+              </li>
+              <li class="services-links__item">
+                <a class="services-links__link" href="#">
+                  Составление и согласование необходимой технической документации для ввода в эксплуатацию объекта;
+                </a>
+              </li>
+              <li class="services-links__item">
+                <a class="services-links__link" href="#">
+                  Ввод присоединенного объекта в эксплуатацию.
+                </a>
+              </li>
+            </ul>
+
           </li>
 
         </ul>

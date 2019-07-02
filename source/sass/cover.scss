@@ -1,11 +1,11 @@
 .cover {
   width: 100%;
-  max-width: 1920px; // Размер блока ограничил - размером фоновой картинки, чтобы подложки не было видно на больших экранах.
   position: relative;
   margin: 0 auto;
   background: url("../img/main-header-bg--1200.jpg"), #141414;
   background-repeat: no-repeat;
   background-position: center -100px;
+  background-size: cover 100%;
 
   &::before {
     content: "";

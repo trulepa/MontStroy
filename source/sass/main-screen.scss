@@ -1,7 +1,6 @@
 .main-screen {
   @media (max-width: $mobile) {
-    background: url("../img/main-header-bg--320.jpg"); //#141414;
-    // Как сделать подложку незнаю. Залезает на main-screen__description.
+    background: url("../img/main-header-bg--320.jpg");
     background-repeat: no-repeat;
     background-position: center -3px;
   }
@@ -16,12 +15,12 @@
   @include container;
   position: relative;
   min-height: 722px;
-  padding: 140px 0 0 15px;
+  padding: 151px 0 0 15px;
 
   @media (max-width: $tablet) {
     position: relative;
     min-height: 600px;
-    padding: 119px 64px 0 84px;
+    padding: 125px 64px 0 84px;
     background: url("../img/main-header-bg--768.jpg"), #141414;
     background-repeat: no-repeat;
     background-position: center top;
@@ -44,7 +43,7 @@
     display: flex;
     flex-direction: column;
     min-height: 465px;
-    padding: 124px 20px 0;
+    padding: 128px 20px 0;
     background: none;
 
     &::before {
@@ -78,7 +77,7 @@
 .main-screen__description {
   max-width: 1018px;
   margin: 0;
-  padding: 20px 0 53px 0;
+  padding: 23px 0 55px 0;
   color: #fffffe;
   font-size: 24px;
   font-weight: 500;
@@ -89,7 +88,7 @@
   }
 
   @media (max-width: $tablet) {
-    padding: 15px 39px 87px 0;
+    padding: 18px 39px 87px 0;
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
