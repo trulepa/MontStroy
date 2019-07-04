@@ -1,29 +1,10 @@
 .main-screen {
-  @media (max-width: $mobile) {
-    background: url("../img/main-header-bg--320.jpg");
-    background-repeat: no-repeat;
-    background-position: center -3px;
-  }
-
-  @media (max-width: 680px) {
-    background-position: -159px -3px;
-  }
-}
-
-
-.main-screen__wrapper {
-  @include container;
-  position: relative;
-  min-height: 722px;
-  padding: 151px 0 0 15px;
-
   @media (max-width: $tablet) {
     position: relative;
-    min-height: 600px;
-    padding: 125px 64px 0 84px;
     background: url("../img/main-header-bg--768.jpg"), #141414;
     background-repeat: no-repeat;
     background-position: center top;
+    background-size: cover;
 
     &::before {
       content: "";
@@ -37,6 +18,33 @@
       background: linear-gradient(to top, #141414, transparent);
       opacity: 0.8;
     }
+  }
+
+  @media (max-width: $mobile) {
+    background: url("../img/main-header-bg--320.jpg");
+    background-repeat: no-repeat;
+    background-position: center -3px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (max-width: 680px) {
+    background-position: -159px -3px;
+  }
+}
+
+
+.main-screen__wrapper {
+  @include container;
+
+  min-height: 722px;
+  padding: 151px 0 0 15px;
+
+  @media (max-width: $tablet) {
+    min-height: 600px;
+    padding: 125px 64px 0 84px;
   }
 
   @media (max-width: $mobile) {
