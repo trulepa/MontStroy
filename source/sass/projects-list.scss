@@ -1,7 +1,7 @@
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  margin: 0 -3px 0 0;
   padding: 0;
   list-style-type: none;
 
@@ -15,26 +15,69 @@
   width: 290px;
   min-height: 290px;
   margin: 0 3px 4px 0;
-  padding: 124px 14px 0 30px;
+  padding: 53px 14px 0 30px;
 
-  &:nth-child(4),
-  &:nth-child(6) {
-    margin-right: 0;
+  &--stadium {
+    background: url("../img/projects-stadium--1200.webp") no-repeat, #2b2f30;
   }
-}
 
-.projects-list__item--other {
-  width: 583px;
-  padding: 113px 80px 0 30px;
-}
+  &--business {
+    background: url("../img/projects-business--1200.webp") no-repeat, #1d1f1e;
+  }
 
-.projects-list__item,
-.projects-list__item--other {
+  &--cinema {
+    background: url("../img/projects-cinema--1200.webp") no-repeat, #2a1b1b;
+  }
+
+  &--medial {
+    background: url("../img/projects-medial--1200.webp") no-repeat, #000101;
+  }
+
+  &--oao {
+    width: 583px;
+    padding: 49px 80px 0 30px;
+    background: url("../img/projects-oao--1200.webp") no-repeat, #1a171c;
+  }
+
+  &--theater {
+    width: 583px;
+    padding: 49px 80px 0 30px;
+    background: url("../img/projects-theater--1200.webp") no-repeat, #390003;
+  }
+
   @media (max-width: $tablet) {
     width: 724px;
     min-height: 180px;
     margin: 0 0 10px 0;
-    padding: 85px 70px 0 44px;
+    padding: 44px 70px 0 44px;
+
+    &--stadium {
+      background: url("../img/projects-stadium--768.webp") no-repeat, #2b2f30;
+    }
+
+    &--business {
+      margin: 0 0 8px 0;
+      background: url("../img/projects-business--768.webp") no-repeat, #1d1f1e;
+    }
+
+    &--cinema {
+      padding: 38px 70px 0 44px;
+      background: url("../img/projects-cinema--768.webp") no-repeat, #2a1b1b;
+    }
+
+    &--medial {
+      padding: 35px 70px 0 44px;
+      background: url("../img/projects-medial--768.webp") no-repeat, #000101;
+    }
+
+    &--oao {
+      margin: 0 0 9px 0;
+      background: url("../img/projects-oao--768.webp") no-repeat, #1a171c;
+    }
+
+    &--theater {
+      background: url("../img/projects-theater--768.webp") no-repeat, #390003;
+    }
   }
 
   @media (max-width: $mobile) {
@@ -43,40 +86,142 @@
     justify-content: center;
     width: 280px;
     min-height: 100px;
+    margin: 0 0 10px 0;
     padding: 0;
+
+    &--stadium {
+      background: url("../img/projects-stadium--320.webp") no-repeat, #2b2f30;
+    }
+
+    &--business {
+      background: url("../img/projects-business--320.webp") no-repeat, #1d1f1e;
+    }
+
+    &--cinema {
+      background: url("../img/projects-cinema--320.webp") no-repeat, #2a1b1b;
+    }
+
+    &--medial {
+      background: url("../img/projects-medial--320.webp") no-repeat, #000101;
+    }
+
+    &--oao {
+      background: url("../img/projects-oao--320.webp") no-repeat, #1a171c;
+    }
+
+    &--theater {
+      background: url("../img/projects-theater--320.webp") no-repeat, #390003;
+    }
+  }
+}
+
+.no-webpalpha {
+  .projects-list__item {
+    &--stadium {
+      background: url("../img/projects-stadium--1200.jpg") no-repeat, #2b2f30;
+    }
+
+    &--business {
+      background: url("../img/projects-business--1200.jpg") no-repeat, #1d1f1e;
+    }
+
+    &--cinema {
+      background: url("../img/projects-cinema--1200.jpg") no-repeat, #2a1b1b;
+    }
+
+    &--medial {
+      background: url("../img/projects-medial--1200.jpg") no-repeat, #000101;
+    }
+
+    &--oao {
+      background: url("../img/projects-oao--1200.jpg") no-repeat, #1a171c;
+    }
+
+    &--theater {
+      background: url("../img/projects-theater--1200.jpg") no-repeat, #390003;
+    }
+
+    @media (max-width: $tablet) {
+      &--stadium {
+        background: url("../img/projects-stadium--768.jpg") no-repeat, #2b2f30;
+      }
+
+      &--business {
+        background: url("../img/projects-business--768.jpg") no-repeat, #1d1f1e;
+      }
+
+      &--cinema {
+        background: url("../img/projects-cinema--768.jpg") no-repeat, #2a1b1b;
+      }
+
+      &--medial {
+        background: url("../img/projects-medial--768.jpg") no-repeat, #000101;
+      }
+
+      &--oao {
+        background: url("../img/projects-oao--768.jpg") no-repeat, #1a171c;
+      }
+
+      &--theater {
+        background: url("../img/projects-theater--768.jpg") no-repeat, #390003;
+      }
+    }
+
+    @media (max-width: $mobile) {
+      &--stadium {
+        background: url("../img/projects-stadium--320.jpg") no-repeat, #2b2f30;
+      }
+
+      &--business {
+        background: url("../img/projects-business--320.jpg") no-repeat, #1d1f1e;
+      }
+
+      &--cinema {
+        background: url("../img/projects-cinema--320.jpg") no-repeat, #2a1b1b;
+      }
+
+      &--medial {
+        background: url("../img/projects-medial--320.jpg") no-repeat, #000101;
+      }
+
+      &--oao {
+        background: url("../img/projects-oao--320.jpg") no-repeat, #1a171c;
+      }
+
+      &--theater {
+        background: url("../img/projects-theater--320.jpg") no-repeat, #390003;
+      }
+    }
   }
 }
 
 .projects-list__title {
-  position: absolute;
-  top: 53px;
-  left: 29px;
   max-width: 200px;
   margin: 0;
   color: #ffffff;
   font-size: 24px;
-  font-weight: 900;
-  line-height: 24px;
-}
-
-.projects-list__title--other {
-  top: 49px;
-  max-width: 408px;
-  font-size: 32px;
   font-weight: 700;
-}
+  line-height: 24px;
 
-.projects-list__title,
-.projects-list__title--other {
+  &--oao,
+  &--theatre {
+    max-width: 408px;
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  &--stadium,
+  &--business {
+    font-weight: 900;
+  }
+
   @media (max-width: $tablet) {
-    top: 40px;
-    left: 42px;
     max-width: 80%;
     font-size: 24px;
+    font-weight: 700;
   }
 
   @media (max-width: $mobile) {
-    position: static;
     font-family: $Raleway;
     font-size: 16px;
     font-weight: 700;
@@ -98,11 +243,48 @@
     line-height: 22px;
   }
 
+  &--stadium,
+  &--medial {
+    padding-top: 47px;
+  }
+
+  &--business,
+  &--cinema {
+    padding-top: 23px;
+  }
+
+  &--oao,
+  &--theater {
+    padding-top: 40px;
+  }
+
   @media (max-width: $tablet) {
+    padding-top: 14px;
     font-size: 18px;
 
     & > span {
       display: none;
+    }
+
+    &--stadium {
+      padding-top: 14px;
+    }
+
+    &--medial {
+      padding-top: 17px;
+    }
+
+    &--business {
+      padding-top: 16px;
+    }
+
+    &--cinema {
+      padding-top: 17px;
+    }
+
+    &--oao,
+    &--theater {
+      padding-top: 14px;
     }
   }
 
@@ -159,31 +341,5 @@
 
   @media (max-width: $tablet) {
     display: none;
-  }
-}
-
-.projects-list__logo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 290px;
-  height: 290px;
-}
-
-.projects-list__logo--other {
-  width: 583px;
-}
-
-.projects-list__logo,
-.projects-list__logo--other {
-  @media (max-width: $tablet) {
-    width: 724px;
-    height: 180px;
-  }
-
-  @media (max-width: $mobile) {
-    width: 280px;
-    height: 100px;
   }
 }

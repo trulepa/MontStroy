@@ -25,9 +25,9 @@
   <script>
     // Picture element HTML5 shiv
     document.createElement("picture");
-
   </script>
   <script src="js/picturefill.js" async=""></script>
+  <script src="js/modernizr-custom.js"></script>
 </head>
 
 <body>
@@ -411,106 +411,52 @@
         <h2 class="projects__title">проекты</h2>
 
         <ul class="projects-list">
-          <li class="projects-list__item">
-            <h3 class="projects-list__title">Стадион «Футур»</h3>
-            <p class="projects-list__description">
+          <li class="projects-list__item projects-list__item--stadium">
+            <h3 class="projects-list__title projects-list__title--stadium">Стадион «Футур»</h3>
+            <p class="projects-list__description projects-list__description--stadium">
               В целях обеспечения электроэнергией стадиона специалистами было осуществлено строительство
               распределительной сети мощностью 20кВ
             </p>
-            <a class="projects-list__link" href="#"></a>
-            <picture class="projects-list__picture">
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/projects-stadium--1200.webp">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/projects-stadium--768.webp">
-              <source type="image/webp" srcset="img/projects-stadium--320.webp">
-
-              <source media="(min-width: 1200px)" srcset="img/projects-stadium--1200.jpg">
-              <source media="(min-width: 768px)" srcset="img/projects-stadium--768.jpg">
-              <img class="projects-list__logo" src="img/projects-stadium--320.jpg" alt="site-logo" width="280" height="100">
-            </picture>
+            <a class="projects-list__link" href="#" title="Переход к проекту" aria-label="transition to project"></a>
           </li>
-          <li class="projects-list__item">
-            <h3 class="projects-list__title">Бизнес-центр «Ореол»</h3>
-            <p class="projects-list__description">
+          <li class="projects-list__item projects-list__item--business">
+            <h3 class="projects-list__title projects-list__title--business">Бизнес-центр «Ореол»</h3>
+            <p class="projects-list__description projects-list__description--business">
               Специалисты провели масштабную работу по организации АСКУЭ на 694 точки учета комплекса с апартаментами
             </p>
-            <a class="projects-list__link" href="#"></a>
-            <picture class="projects-list__picture">
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/projects-business--1200.webp">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/projects-business--768.webp">
-              <source type="image/webp" srcset="img/projects-business--320.webp">
-
-              <source media="(min-width: 1200px)" srcset="img/projects-business--1200.jpg">
-              <source media="(min-width: 768px)" srcset="img/projects-business--768.jpg">
-              <img class="projects-list__logo" src="img/projects-business--320.jpg" alt="site-logo" width="280" height="100">
-            </picture>
+            <a class="projects-list__link" href="#" title="Переход к проекту" aria-label="transition to project"></a>
           </li>
-          <li class="projects-list__item">
+          <li class="projects-list__item projects-list__item--cinema">
             <h3 class="projects-list__title">Кинотеатр «Семейный»</h3>
-            <p class="projects-list__description">
+            <p class="projects-list__description projects-list__description--cinema">
               Специалисты выполнили комплекс работ по системам учета электроэнергии
             </p>
-            <a class="projects-list__link" href="#"></a>
-            <picture class="projects-list__picture">
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/projects-cinema--1200.webp">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/projects-cinema--768.webp">
-              <source type="image/webp" srcset="img/projects-cinema--320.webp">
-
-              <source media="(min-width: 1200px)" srcset="img/projects-cinema--1200.jpg">
-              <source media="(min-width: 768px)" srcset="img/projects-cinema--768.jpg">
-              <img class="projects-list__logo" src="img/projects-cinema--320.jpg" alt="site-logo" width="280" height="100">
-            </picture>
+            <a class="projects-list__link" href="#" title="Переход к проекту" aria-label="transition to project"></a>
           </li>
-          <li class="projects-list__item">
+          <li class="projects-list__item projects-list__item--medial">
             <h3 class="projects-list__title">ТК «Medial»</h3>
-            <p class="projects-list__description">
+            <p class="projects-list__description projects-list__description--medial">
               В целях обеспечения электроэнергией телевизионного комплекса было осуществлено строительство
               распределительной сети мощностью 20кВ
             </p>
-            <a class="projects-list__link" href="#"></a>
-            <picture class="projects-list__picture">
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/projects-medial--1200.webp">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/projects-medial--768.webp">
-              <source type="image/webp" srcset="img/projects-medial--320.webp">
-
-              <source media="(min-width: 1200px)" srcset="img/projects-medial--1200.jpg">
-              <source media="(min-width: 768px)" srcset="img/projects-medial--768.jpg">
-              <img class="projects-list__logo" src="img/projects-medial--320.jpg" alt="site-logo" width="280" height="100">
-            </picture>
+            <a class="projects-list__link" href="#" title="Переход к проекту" aria-label="transition to project"></a>
           </li>
-          <li class="projects-list__item projects-list__item--other">
-            <h3 class="projects-list__title projects-list__title--other">ОАО «ЭнергоНацКомпани»</h3>
-            <p class="projects-list__description">
+          <li class="projects-list__item projects-list__item--oao">
+            <h3 class="projects-list__title projects-list__title--oao">ОАО «ЭнергоНацКомпани»</h3>
+            <p class="projects-list__description projects-list__description--oao">
               Компанией были выполнены строительно-монтажные и пусконаладочные работы<span>, а также поставлены материалы
                 и оборудование при осуществлении ремонта электросетевого имущества кабельных линий 220 кВ</span> для ОАО
               «ЭнергоНацКомпани»
             </p>
-            <a class="projects-list__link" href="#"></a>
-            <picture class="projects-list__picture">
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/projects-OAO--1200.webp">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/projects-OAO--768.webp">
-              <source type="image/webp" srcset="img/projects-OAO--320.webp">
-
-              <source media="(min-width: 1200px)" srcset="img/projects-OAO--1200.jpg">
-              <source media="(min-width: 768px)" srcset="img/projects-OAO--768.jpg">
-              <img class="projects-list__logo projects-list__logo--other" src="img/projects-OAO--320.jpg" alt="site-logo" width="280" height="100">
-            </picture>
+            <a class="projects-list__link" href="#" title="Переход к проекту" aria-label="transition to project"></a>
           </li>
-          <li class="projects-list__item projects-list__item--other">
-            <h3 class="projects-list__title projects-list__title--other">Театр «Буратино»</h3>
-            <p class="projects-list__description">
+          <li class="projects-list__item projects-list__item--theater">
+            <h3 class="projects-list__title projects-list__title--theatre">Театр «Буратино»</h3>
+            <p class="projects-list__description projects-list__description--theater">
               Специалистами были проведены комплексные электро-монтажные и пуско-наладочные работы по механизации
               сценических подъемников в здании театра
             </p>
-            <a class="projects-list__link" href="#"></a>
-            <picture class="projects-list__picture">
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/projects-theater--1200.webp">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/projects-theater--768.webp">
-              <source type="image/webp" srcset="img/projects-theater--320.webp">
-
-              <source media="(min-width: 1200px)" srcset="img/projects-theater--1200.jpg">
-              <source media="(min-width: 768px)" srcset="img/projects-theater--768.jpg">
-              <img class="projects-list__logo projects-list__logo--other" src="img/projects-theater--320.jpg" alt="site-logo" width="280" height="100">
-            </picture>
+            <a class="projects-list__link" href="#" title="Переход к проекту" aria-label="transition to project"></a>
           </li>
         </ul>
 
