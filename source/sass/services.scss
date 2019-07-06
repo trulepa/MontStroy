@@ -1,0 +1,60 @@
+.services {
+  background-color: $white;
+}
+
+.services__wrapper {
+  @include container;
+
+  padding: 99px 16px 0;
+
+  @media (max-width: $tablet) {
+    padding: 34px 22px 0;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 31px 0 0 0;
+    margin: 0;
+    max-width: 100%;
+  }
+}
+
+
+.services__title {
+  position: relative;
+  margin: 0 0 17px 0;
+  color: $black;
+  font-family: $Raleway;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 300px;
+    display: block;
+    width: 871px;
+    height: 2px;
+    border: 1px solid #000000;
+    background-color: #f5f8fa;
+  }
+
+  @media (max-width: $tablet) {
+    margin: 0 0 14px 0;
+    font-size: 26px;
+    letter-spacing: 1.04px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    margin-left: 20px;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+  }
+}

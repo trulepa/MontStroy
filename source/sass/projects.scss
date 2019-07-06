@@ -1,0 +1,57 @@
+.projects {
+  margin: 60px 0 0;
+  background-color: $white;
+}
+
+.projects__wrapper {
+  @include container;
+
+  padding: 0 15px 0;
+
+  @media (max-width: $tablet) {
+    padding: 0 22px 0;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 0 20px 0;
+  }
+}
+
+.projects__title {
+  position: relative;
+  margin: 0 0 34px 0;
+  color: $black;
+  font-family: $Raleway;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 300px;
+    display: block;
+    width: 871px;
+    height: 2px;
+    border: 1px solid #000000;
+    background-color: #f5f8fa;
+  }
+
+  @media (max-width: $tablet) {
+    margin: 0 0 30px;
+    font-size: 26px;
+    letter-spacing: 1.04px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    margin: 0 0 2px;
+    font-size: 20px;
+  }
+}
